@@ -270,8 +270,6 @@ with tab4:
             fig2.update_layout(height=420)
             st.plotly_chart(fig2, use_container_width=True)
 
-st.caption("Tip: Keep the dashboard simple. The goal is interactive exploration, not perfection.")
-
 # Download button
 csv_bytes = df_f.to_csv(index=False).encode("utf-8")
 st.sidebar.download_button(
